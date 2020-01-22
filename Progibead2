@@ -1,0 +1,36 @@
+using System;
+
+namespace MyApplication
+{
+    public class Program
+    {
+        public static int[] Tömb;
+        public static int Tömbh;
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Milyen hosszú legyen a tömb?");
+            Tömbh = Convert.ToInt32(Console.ReadLine());
+            Tömb = new int[Tömbh];
+            for (int i = 0; i < Tömb.Length; i++)
+            {
+                _ = new Ososztaly();
+                Tömb[i] = Ososztaly.randNum;
+            }
+            Console.WriteLine("A rendezettlen tömb kiírása:");
+            for (int i = 0; i < Tömbh; i++)
+            {
+                Console.Write(Tömb[i] + " ");
+            }
+            Console.WriteLine();
+            Osztaly.Rend();
+            Console.WriteLine("A rendezett tömb kiírása:");
+            for (int i = 0; i < Tömbh; i++)
+            {
+                Console.Write(Tömb[i] + " ");
+
+            }
+            Console.WriteLine();
+            Console.ReadKey();
+        }
+    }
+}
