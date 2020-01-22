@@ -15,15 +15,15 @@ namespace MyApplication
     {
         public static void Rend()
         {
-            for (int j = tombhossza - 1; j > 0; j--)
+            for (int j = Tömbh - 1; j > 0; j--)
             {
                 for (int k = 0; k < j; k++)
                 {
-                    if (tomb[k] > tomb[k + 1])
+                    if (Tömb[k] > Tömb[k + 1])
                     {
-                        int s = tomb[k + 1];
-                        tomb[k + 1] = tomb[k];
-                        tomb[k] = s;
+                        int s = Tömb[k + 1];
+                        Tömb[k + 1] = Tömb[k];
+                        Tömb[k] = s;
                     }
                 }
             }
